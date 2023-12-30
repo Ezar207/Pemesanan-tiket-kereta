@@ -11,6 +11,9 @@ class MainPemesananTiket {
         System.out.println("Selamat datang di layanan pemesanan tiket kereta!");
 
         // Memilih kelas tiket
+        System.out.println("Silahkan pilih tiket anda ");
+        System.out.println("1. Bisnis  (150000) ");
+        System.out.println("2. Ekonomi (100000) ");
         System.out.print("Pilih kelas tiket (Bisnis/Ekonomi): ");
         String kelas = scanner.nextLine().trim().toLowerCase();
 
