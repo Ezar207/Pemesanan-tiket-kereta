@@ -14,7 +14,16 @@ class TiketKereta {
     }
 
     public int totalHarga() {
-        return this.jumlahTiket * this.harga;
+        int total = this.jumlahTiket * this.harga;
+
+        // Diskon 10% jika jumlah tiket lebih dari 5
+        if (this.jumlahTiket > 5) {
+            double diskon = 0.1 * total;
+            total -= diskon;
+            System.out.println("Selamat, Anda telah mendapatkan diskon 10% karena telah memesan lebih dari lima tiket.");
+        }
+
+        return total;
     }
 
     public String getKelas() {
